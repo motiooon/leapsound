@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 var Leap = require("leapjs");
 var nexpect = require('nexpect');
+var growl = require('growl')
 
 
 var controller = new Leap.Controller({ enableGestures: true });
@@ -54,7 +55,9 @@ var OSX= {
             nexpect.spawn("osascript", ["-e", arg2])
                 .run(function (err, stdout, exitcode) {
                     if (!err) {
-                        console.log("volume was set to %s", volume);
+                        var log_text = "Howdy! OSX volume was set to " + volume;
+                        console.log(log_text);
+                        growl(log_text, {title: "Leap Sound"});
                         OSX.cache.volume = volume;
                         if(cb){
                             cb(null, volume);

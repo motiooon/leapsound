@@ -1,0 +1,31 @@
+{
+  "name": "leapsound",
+  "version": "0.0.1",
+  "description": "Control your OSX volume using circles on leapmotion controller",
+  "main": "index.js",
+  "dependencies": {
+    "leapjs": "~0.3.0-beta3",
+    "nexpect": "~0.3.0",
+    "growl": "~1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/motiooon/leapsound.git"
+  },
+  "keywords": [
+    "leapmotion",
+    "sounx",
+    "osascript",
+    "macosx"
+  ],
+  "author": "Gabriel Baciu",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/motiooon/leapsound/issues"
+  },
+  "homepage": "https://github.com/motiooon/leapsound"
+}
