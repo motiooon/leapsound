@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var Leap = require("leapjs");
 var nexpect = require('nexpect');
-var growl = require('growl')
+var growl = require('growl');
 
 
 var controller = new Leap.Controller({ enableGestures: true });
